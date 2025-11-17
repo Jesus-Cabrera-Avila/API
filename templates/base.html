@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block titulo %}Inicio - Desarrollo de Plantilla Base{% endblock %}</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        /* Paleta oficial combinada USDA */
+        :root {
+            --usda-blue-dark: #0A3D62;
+            --usda-blue: #1e6091;
+            --usda-blue-light: #89c2d9;
+            --usda-soft: #f0f4f8;
+            --usda-white: #ffffff;
+        }
+
+        body {
+            background-color: var(--usda-soft);
+            color: var(--usda-blue-dark);
+        }
+
+        footer {
+            background: var(--usda-blue);
+            color: white !important;
+        }
+
+        .container {
+            background: var(--usda-white);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container my-5">
+        {% block contenido %}
+        <h1>Bienvenido</h1>
+        {% endblock %}
+    </div>
+
+    <footer class="bg-light text-center py-3">
+        <p>&copy; Come bien:V</p>
+    </footer>
+
+</body>
+</html>
