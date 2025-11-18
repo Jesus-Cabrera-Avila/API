@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, redirect, url_for, flash
 import requests
 
 app = Flask(__name__)
-app.secret_key = "Super_Secret_Key"
+app.secret_key = "Super_Secreta_Key"
 
 API_KEY = "jJ7mu9e8ScW6YatOKKbNFE93fpxcV5E1BLy45NrW"
 API_SEARCH = "https://api.nal.usda.gov/fdc/v1/foods/search"
